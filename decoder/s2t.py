@@ -46,11 +46,11 @@ def decode(etext):
 
   return ''.join(decoded_chars)
 
-ph = "./encoder/output/example.wav"
+ph = "./encoder/output/example.wav" # you can insert any path here
 et = read_wav(ph)
 dt = decode(et)
 print(dt)
 
-tp = "./decoder/output/example.txt"
+tp = "./decoder/output/example.txt" # you can insert any path here
 with open(tp, "w", encoding="utf-8") as file:
   file.write(dt)
