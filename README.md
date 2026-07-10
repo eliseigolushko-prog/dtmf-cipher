@@ -43,8 +43,8 @@ This project allows you to:
 
 ```bash
 git clone https://github.com/eliseigolushko-prog/dtmf-cipher
+cd dtmf-cipher
 ```
-
 ```bash
 pip install -r requirements.txt
 ```
