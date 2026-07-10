@@ -12,6 +12,17 @@ This project allows you to:
 ## Project Structure
 
 ```
+├── app/              # Application of flet
+│   └── dtmf_cipher_app/
+│       ├── pyproject.toml
+│       ├── README.md
+│       └── src/
+│           ├── dtmf_core.py  # DTMF core for app
+│           ├── main.py       # Main file of app
+│           └── assets/       # Icons
+│               ├── icon.png
+│               ├── icon.ico
+│               └── favicon.png
 ├── encoder/           # Encoding module
 │   ├── s2a.py        # Convert string to audio
 │   ├── t2s.py        # Convert text to DTMF symbols
@@ -59,6 +70,24 @@ python decoder/s2t.py
 ```
 
 The script reads `encoder/output/example.wav`, decodes the DTMF signal, and saves the result to `decoder/output/example.txt`.
+
+### Decoding in web app
+
+```bash
+cd app/dtmf_cipher_app
+flet run --web
+```
+
+### Creating application
+
+```bash
+cd app/dtmf_cipher_app
+flet build macos # for macos
+flet build windows # for windows
+flet build linux # for linux
+flet build apk # for android
+flet build ipa # for ios
+```
 
 ## DTMF Encoding
 

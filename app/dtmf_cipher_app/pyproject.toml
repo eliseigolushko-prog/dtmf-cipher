@@ -1,0 +1,30 @@
+[project]
+name = "dtmf-cipher-app"
+version = "0.1.0"
+description = "DTMF Cipher - Encode text to DTMF signals and decode them back"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "eliseigolushko-prog", email = "you@example.com" }
+]
+dependencies = [
+    "flet>=0.85.3",
+    "numpy>=2.5.1",
+    "scipy>=1.18.0",
+]
+
+[dependency-groups]
+dev = [
+    "flet-cli>=0.85.3",
+    "flet-desktop>=0.85.3",
+    "flet-web>=0.85.3",
+]
+
+[tool.flet]
+org = "com.github.eliseigolushko-prog"
+product = "dtmf-cipher-app"
+company = "eliseigolushko-prog"
+copyright = "Copyright (C) 2026 by eliseigolushko-prog"
+
+[tool.flet.app]
+path = "src"
